@@ -4,7 +4,20 @@
 
 Export Dradis findings into Comma Separated Value (CSV) format.
 
-The plugin requires Dradis 3.0 or higher.
+
+## Installation
+
+The plugin requires [Dradis Community Edition](http://dradisframework.org) 3.0 or [Dradis Professional Edition](http://securityroots.com/dradispro/) 1.11 or higher.
+
+Add the CSV plugin to your `Gemfile.plugins`:
+
+    gem 'dradis-csv'
+
+And
+
+    bundle install
+
+And restart your service.
 
 
 ## More information
