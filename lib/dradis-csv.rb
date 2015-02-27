@@ -1,13 +1,9 @@
+
+# Hook to the framework base clases
+require 'dradis-plugins'
+
+# Load supporting CSV classes
 require 'csv'
 
-require 'dradis/plugins/csv/engine'
-require 'dradis/plugins/csv/exporter'
-require 'dradis/plugins/csv/version'
-
-
-module Dradis
-  module Plugins
-    module CSV
-    end
-  end
-end
+# Load this add-on's engine
+require 'dradis/plugins/csv'
