@@ -13,7 +13,7 @@ module Dradis::Plugins::CSV
       end
     end
 
-    initializer 'calculator_dread.mount_engine' do
+    initializer 'dradis-csv.mount_engine' do
       Rails.application.routes.append do
         mount Dradis::Plugins::CSV::Engine => '/export/csv'
       end
