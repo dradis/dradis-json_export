@@ -5,18 +5,18 @@ module Dradis
 
         def index
           # these come from Export#create
-          export_manager = session[:export_manager].with_indifferent_access
+          export_manager_hash   = session[:export_manager].with_indifferent_access
+          content_service_class = export_manager_hash[:content_service].constantize
 
           exporter = Dradis::Plugins::CSV::Exporter.new(
-            content_service: export_manager[:content_service].constantize.new
+            content_service: content_service_class.new(plugin: Dradis::Plugins::CSV)
           )
-          csv = exporter.export(
-            template: export_manager[:template]
-          )
+          csv = exporter.export(export_manager_hash)
 
-          send_data csv, filename: "dradis_report-#{Time.now.to_i}.csv",
-                                type: 'text/csv',
-                                disposition: 'inline'
+          send_data csv,
+            disposition: 'inline',
+            filename: "dradis_report-#{Time.now.to_i}.csv",
+            type: 'text/csv'
         end
       end
 
