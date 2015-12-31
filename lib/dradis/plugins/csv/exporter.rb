@@ -1,7 +1,6 @@
 module Dradis::Plugins::CSV
   class Exporter < Dradis::Plugins::Export::Base
     def export(args={})
-      content_service = args[:content_service].constantize.new
       template        = args[:template]
 
       issues = content_service.all_issues
