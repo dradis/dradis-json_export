@@ -2,8 +2,8 @@ require_relative 'gem_version'
 
 module Dradis
   module Plugins
-    module CSV
-      # Returns the version of the currently loaded CSV as a
+    module JSON
+      # Returns the version of the currently loaded JSON as a
       # <tt>Gem::Version</tt>.
       def self.version
         gem_version

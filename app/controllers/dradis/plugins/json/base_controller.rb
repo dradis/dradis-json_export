@@ -1,6 +1,6 @@
 module Dradis
   module Plugins
-    module CSV
+    module JSON
       class BaseController < Dradis::Plugins::Export::BaseController
 
         def index
@@ -8,15 +8,13 @@ module Dradis
           export_manager_hash   = session[:export_manager].with_indifferent_access
           content_service_class = export_manager_hash[:content_service].constantize
 
-          exporter = Dradis::Plugins::CSV::Exporter.new(
-            content_service: content_service_class.new(plugin: Dradis::Plugins::CSV)
+          exporter = Dradis::Plugins::JSON::Exporter.new(
+            content_service: content_service_class.new(plugin: Dradis::Plugins::JSON)
           )
-          csv = exporter.export(export_manager_hash)
 
-          send_data csv,
-            disposition: 'inline',
-            filename: "dradis_report-#{Time.now.to_i}.csv",
-            type: 'text/csv'
+          doc = exporter.export(export_manager_hash)
+
+          render type: 'text/html', text: doc
         end
       end
 
