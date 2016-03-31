@@ -1,17 +1,15 @@
-# CSV plugin for Dradis
+# JSON plugin for Dradis
 
-[![Build Status](https://secure.travis-ci.org/dradis/dradis-csv.png?branch=master)](http://travis-ci.org/dradis/dradis-csv)
-
-Export Dradis findings into Comma Separated Value (CSV) format.
+Export Dradis findings into JavaScript Object Notation (JSON) format.
 
 
 ## Installation
 
-The plugin requires [Dradis Community Edition](http://dradisframework.org) 3.0 or [Dradis Professional Edition](http://securityroots.com/dradispro/) 1.11 or higher.
+The plugin requires [Dradis Community Edition](http://dradisframework.org) 3.1 or [Dradis Professional Edition](http://securityroots.com/dradispro/) 2.0 or higher.
 
-Add the CSV plugin to your `Gemfile.plugins`:
+Add the JSON plugin to your `Gemfile.plugins`:
 
-    gem 'dradis-csv'
+    gem 'dradis-json'
 
 And
 
