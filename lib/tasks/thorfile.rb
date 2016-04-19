@@ -1,5 +1,5 @@
 class JsonExportTasks < Thor
-  include Core::Pro::ProjectScopedTask if defined?(::Core::Pro)
+  include Dradis::Plugins::thor_helper_module.to_s.constantize
 
   namespace     "dradis:plugins:json"
 
@@ -19,15 +19,10 @@ class JsonExportTasks < Thor
     opts[:logger] = logger
     content_service = nil
 
-    if defined?(Dradis::Pro)
-      detect_and_set_project_scope
-      content_service = 'Dradis::Pro::Plugins::ContentService'
-    else
-      content_service = 'Dradis::Plugins::ContentService'
-    end
+    detect_and_set_project_scope
     
     json = Dradis::Plugins::JSON::Exporter.new.export({
-      content_service: content_service
+      content_service: content_service_for(Dradis::Plugins::JSON),
     })
     
     File.open(report_path, 'w') do |f|
