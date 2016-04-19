@@ -4,7 +4,7 @@ module Dradis::Plugins::JSON
 
     include Dradis::Plugins::Base
     provides :export
-    description 'Export results in JavaScript Object Notation'
+    description 'Export results in JSON format'
 
 
     initializer "dradis-json.inflections" do |app|
