@@ -14,7 +14,7 @@ module Dradis
 
           doc = exporter.export(export_manager_hash)
 
-          render type: 'text/html', text: doc
+          render text: doc
         end
       end
 
