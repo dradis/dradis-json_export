@@ -1,6 +1,6 @@
 $:.push File.expand_path('../lib', __FILE__)
 require 'dradis/plugins/json/version'
-version = Dradis::Plugins::JSON::VERSION::STRING
+version = Dradis::Plugins::Json::VERSION::STRING
 
 
 # Describe your gem and declare its dependencies:
