@@ -1,4 +1,4 @@
-module Dradis::Plugins::JSON
+module Dradis::Plugins::Json
 
   class Exporter < Dradis::Plugins::Export::Base
     def export(args={})

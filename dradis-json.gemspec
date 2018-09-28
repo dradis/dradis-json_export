@@ -1,6 +1,6 @@
 $:.push File.expand_path('../lib', __FILE__)
 require 'dradis/plugins/json/version'
-version = Dradis::Plugins::JSON::VERSION::STRING
+version = Dradis::Plugins::Json::VERSION::STRING
 
 
 # Describe your gem and declare its dependencies:
@@ -21,10 +21,10 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   spec.test_files = spec.files.grep(%r{^(test|spec|features)/})
 
-  spec.add_dependency 'dradis-plugins', '~> 3.5'
+  spec.add_dependency 'dradis-plugins', '~> 3.10'
 
   spec.add_development_dependency 'bundler', '~> 1.6'
   spec.add_development_dependency 'rake', '~> 10.0'
 
-  spec.add_development_dependency 'rspec-rails'#, '~> 3.0.0'
+  spec.add_development_dependency 'rspec-rails'
 end

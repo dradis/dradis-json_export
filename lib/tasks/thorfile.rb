@@ -20,18 +20,18 @@ class JsonExportTasks < Thor
     content_service = nil
 
     detect_and_set_project_scope
-    
-    json = Dradis::Plugins::JSON::Exporter.new.export({
-      content_service: content_service_for(Dradis::Plugins::JSON),
+
+    json = Dradis::Plugins::Json::Exporter.new.export({
+      content_service: content_service_for(Dradis::Plugins::Json),
     })
-    
+
     File.open(report_path, 'w') do |f|
       f << json
     end
 
     logger.info{ "Report file created at:\n\t#{report_path}" }
     logger.close
-    
+
   end
 
 

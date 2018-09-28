@@ -1,14 +1,14 @@
 module Dradis
   module Plugins
-    module JSON
+    module Json
       # Returns the version of the currently loaded JSON as a <tt>Gem::Version</tt>
       def self.gem_version
         Gem::Version.new VERSION::STRING
       end
 
       module VERSION
-        MAJOR = 0
-        MINOR = 1
+        MAJOR = 3
+        MINOR = 10
         TINY  = 0
         PRE   = nil
 
