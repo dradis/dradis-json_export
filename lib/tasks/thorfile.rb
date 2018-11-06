@@ -1,5 +1,5 @@
 class JsonExportTasks < Thor
-  include Dradis::Plugins::thor_helper_module.to_s.constantize
+  include Rails.application.config.dradis.thor_helper_module
 
   namespace     "dradis:plugins:json"
 
