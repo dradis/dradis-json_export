@@ -1,3 +1,7 @@
+## Dradis Framework 3.16 (February, 2020) ##
+
+*   No changes
+
 ## Dradis Framework 3.15 (December, 2019) ##
 
 *   No changes
