@@ -1,3 +1,7 @@
+## Dradis Framework X.XX (XXXX, 2021) ##
+
+*   Add views so that JSON exporter appears as a tab on the Export page
+
 ## Dradis Framework 3.22 (April, 2021) ##
 
 *   No changes
