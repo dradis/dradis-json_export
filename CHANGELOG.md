@@ -1,61 +1,45 @@
-## Dradis Framework X.XX (XXXX, 2021) ##
+[v#.#.#] ([month] [YYYY])
+  - Add views so that JSON exporter appears as a tab on the Export page
 
-*   Add views so that JSON exporter appears as a tab on the Export page
+v4.0.0 (July 2021)
+  - No changes
 
-## Dradis Framework 4.0.0 (July, 2021) ##
+v3.22.0 (April 2021)
+  - No changes
 
-*   No changes
+v3.21.0 (February 2021)
+  - No changes
 
-## Dradis Framework 3.22 (April, 2021) ##
+v3.20.0 (December 2020)
+  - No changes
 
-*   No changes
+v3.19.0 (September 2020)
+  - No changes
 
-## Dradis Framework 3.21 (February, 2021) ##
+v3.18.0 (July 2020)
+  - No changes
 
-*   No changes
+v3.17.0 (May 2020)
+  - No changes
 
-## Dradis Framework 3.20 (December, 2020) ##
+v3.16.0 (February 2020)
+  - No changes
 
-*   No changes
+v3.15.0 (November 2019)
+  - No changes
 
-## Dradis Framework 3.19 (September, 2020) ##
+v3.14.0 (August 2019)
+  - No changes
 
-*   No changes
+v3.13.0 (June 2019)
+  - No changes
 
-## Dradis Framework 3.18 (July, 2020) ##
+v3.12.0 (March 2019)
+  - No changes
 
-*   No changes
+v3.11.0 (November 2018)
+  - Fix thor_helper_module_error
 
-## Dradis Framework 3.17 (May, 2020) ##
-
-*   No changes
-
-## Dradis Framework 3.16 (February, 2020) ##
-
-*   No changes
-
-## Dradis Framework 3.15 (December, 2019) ##
-
-*   No changes
-
-## Dradis Framework 3.14 (August, 2019) ##
-
-*   No changes
-
-## Dradis Framework 3.13 (June, 2019) ##
-
-*   No changes
-
-## Dradis Framework 3.12 (April, 2019) ##
-
-*   No changes
-
-## Dradis Framework 3.11 (November, 2018) ##
-
-*   Fix thor_helper_module_error
-
-## Dradis Framework 3.10 (August, 2018) ##
-
-*   Update to work with dradis CE 3.10
-    (changed namespace from JSON to Json,
-    updated base_controller to inherit from the latest Dradis::Plugins::Export::BaseController)
+v3.10.0 (August 2018)
+  - Updated base_controller to inherit from the latest Dradis::Plugins::Export::BaseController
+  - Update to work with dradis CE 3.10 (changed namespace from JSON to Json)
