@@ -1,4 +1,4 @@
-[v#.#.#] ([month] [YYYY])
+v4.1.0 (November 2021)
   - Add views so that JSON exporter appears as a tab on the Export page
 
 v4.0.0 (July 2021)
