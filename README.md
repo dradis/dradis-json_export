@@ -5,7 +5,7 @@ Export Dradis findings into JavaScript Object Notation (JSON) format.
 
 ## Installation
 
-The plugin requires [Dradis Community Edition](http://dradisframework.org) 3.1 or [Dradis Professional Edition](http://securityroots.com/dradispro/) 2.0 or higher.
+The plugin requires [Dradis CE](http://dradis.com/ce/) > 3.0 or [Dradis Pro](http://dradis.com/) 2.0 or higher.
 
 Add the JSON plugin to your `Gemfile.plugins`:
 
