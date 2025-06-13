@@ -1,3 +1,5 @@
 Dradis::Plugins::JSON::Engine.routes.draw do
-  post '/report/:project_id', to: 'base#index', as: :report
+  resources :projects, only: [] do
+    resource :report, only: [:create], path: '/export/json/reports'
+  end
 end

@@ -8,13 +8,7 @@ module Dradis::Plugins::JSON
 
     initializer 'dradis-json.mount_engine' do
       Rails.application.routes.append do
-        mount Dradis::Plugins::JSON::Engine => '/export/json'
-      end
-    end
-
-    initializer 'dradis-json.inflections' do |app|
-      ActiveSupport::Inflector.inflections do |inflect|
-        inflect.acronym('JSON')
+        mount Dradis::Plugins::JSON::Engine => '/', as: :json_export
       end
     end
   end
