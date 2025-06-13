@@ -1,7 +1,6 @@
-module Dradis::Plugins::Json
-
+module Dradis::Plugins::JSON
   class Exporter < Dradis::Plugins::Export::Base
-    def export(args={})
+    def export(args = {})
 
       issues = content_service.all_issues
 

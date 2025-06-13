@@ -1,3 +1,6 @@
+v4.16.1 (Month 2025)
+  - Fix compatbility of the JSON exporter with the current version of Dradis
+
 v4.16.0 (May 2025)
   - No changes
 

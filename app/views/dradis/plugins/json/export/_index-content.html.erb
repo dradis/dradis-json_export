@@ -1,10 +1,9 @@
 <%= content_tag :div, id: 'plugin-json', class: 'tab-pane fade' do %>
-  <%= form_tag project_export_manager_path(current_project), target: '_blank' do %>
-    <%= hidden_field_tag :plugin, :json %>
-    <%= hidden_field_tag :route, :root %>
-
+  <%= form_tag json_export.project_report_path(current_project), target: '_blank' do %>
     <h4 class="header-underline">Ready when you are!</h4>
 
-    <button id="export-button" class="btn btn-lg btn-primary mt-4">Export</button>
+    <div class="mt-4">
+      <%= render partial: 'export/submit_button', locals: { plugin_name: Dradis::Plugins::JSON::Engine.plugin_name } %>
+    </div>
   <% end %>
 <% end%>
