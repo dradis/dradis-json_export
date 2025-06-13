@@ -1,11 +1,17 @@
 module Dradis
   module Plugins
-    module Json
+    module JSON
       class BaseController < Dradis::Plugins::Export::BaseController
+        skip_before_action :validate_template
 
         def index
-          exporter = Dradis::Plugins::Json::Exporter.new(export_options)
-          json     = exporter.export
+          opts = {
+            project_id: export_params[:project_id],
+            scope: export_params[:scope]
+          }
+
+          exporter = Dradis::Plugins::JSON::Exporter.new(opts)
+          json = exporter.export
 
           render json: json
         end

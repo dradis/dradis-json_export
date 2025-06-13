@@ -21,8 +21,8 @@ class JsonExportTasks < Thor
 
     detect_and_set_project_scope
 
-    json = Dradis::Plugins::Json::Exporter.new.export({
-      content_service: content_service_for(Dradis::Plugins::Json),
+    json = Dradis::Plugins::JSON::Exporter.new.export({
+      content_service: content_service_for(Dradis::Plugins::JSON),
     })
 
     File.open(report_path, 'w') do |f|
