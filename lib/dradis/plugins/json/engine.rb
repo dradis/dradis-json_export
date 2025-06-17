@@ -1,6 +1,6 @@
-module Dradis::Plugins::Json
+module Dradis::Plugins::JSON
   class Engine < ::Rails::Engine
-    isolate_namespace Dradis::Plugins::Json
+    isolate_namespace Dradis::Plugins::JSON
 
     include Dradis::Plugins::Base
     provides :export
@@ -8,9 +8,8 @@ module Dradis::Plugins::Json
 
     initializer 'dradis-json.mount_engine' do
       Rails.application.routes.append do
-        mount Dradis::Plugins::Json::Engine => '/export/json'
+        mount Dradis::Plugins::JSON::Engine => '/', as: :json_export
       end
     end
-
   end
 end
